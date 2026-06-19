@@ -2,8 +2,7 @@
  * @file  bh1750.h
  * @brief BH1750FVI ambient light sensor driver
  */
-#ifndef BH1750_H
-#define BH1750_H
+#pragma once
 
 #include <stdint.h>
 #include <stddef.h>
@@ -82,8 +81,6 @@ BH1750_Status BH1750_Init(BH1750_Dev *dev, BH1750_Mode mode);
 BH1750_Status BH1750_SetMTreg(BH1750_Dev *dev, uint8_t mtreg);
 BH1750_Status BH1750_ReadLux(BH1750_Dev *dev, float *lux);
 BH1750_Status BH1750_PowerDown(BH1750_Dev *dev);
-
-#endif /* BH1750_H */
 
 #ifdef __cplusplus
 }
